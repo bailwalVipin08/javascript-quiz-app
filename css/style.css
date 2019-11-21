@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+
+body {
+    background: url('../images/back.jpeg') no-repeat;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-section {
+}
+
+.quiz-body {
+    background: rgba(255, 255, 255, 1);
+    margin: 150px 33%;
+    padding: 10px 20px 50px 20px;
+    -webkit-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+    box-shadow: 4px 4px 11px 3px rgba(0, 0, 0, 0.3);
+}
+
+#score, #timer {
+    display: inline-block;
+}
+
+#timer {
+    padding-left: 50%;
+}
+
+h1 {
+    font-size: 700;
+    text-align: center;
+}
