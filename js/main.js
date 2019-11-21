@@ -4,10 +4,21 @@ const quiz = [
     ["What is Batman's real name?", 'Bruce Wayne']
 ];
 
-let score = 0;
+function start(quiz){
+    let score = 0;
 
-for(const [question,answer] of quiz){
-    const response = prompt(question);
+//main loop for game
+for(const [question, answer] of quiz){
+    const response = ask(question);
+    check(response, answer);
+}
+
+//question function
+function ask(question){
+    return prompt(question);
+}
+//check answer entered by user
+function check(response,answer){
     if(response === answer){
         alert('Correct!');
         score++;
@@ -16,4 +27,11 @@ for(const [question,answer] of quiz){
     }
 }
 
-alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);
+gameOver();
+
+function gameOver(){
+    alert(`Game Over, you scored ${score} point${score !== 1 ? 's' : ''}`);
+}
+
+}
+start(quiz);
